@@ -223,3 +223,340 @@
 - **Reverse proxies** act as a **single front** end for multiple servers, distributing **incoming** requests and handling encryption and decryption work.
 
 ## Modul 5: Introduction to Connecting to the Internet
+
+### POSTS and Dial-Up
+
+#### Dial-up and Modems
+
+- Dial-up connections used the **Public Switched Telephone Network (PSTN)** or Plain Old Telephone Service (POTS) to transfer data.
+- Modems were used to convert computer data into audible wavelengths that could be transmitted over the phone lines.
+- Early modems had low baud rates, but over time, the speed of dial-up connections increased to 14.4 kilobits per second.
+- Dial-up Internet connectivity is now rare, but it was the main way computers communicated over long distances for several decades.
+- Modems were used to convert computer data into audible wavelengths that could be transmitted over the phone lines.
+- Early modems had low baud rates, but over time, the speed of dial-up connections increased to 14.4 kilobits per second.
+
+### Brodband Connections
+
+#### What is Broadband?
+
+- Broadband internet refers to any connectivity technology that is not dial-up internet.
+- Broadband connections are always on, providing faster and more reliable connections compared to dial-up.
+- T-carrier technologies were commonly used by businesses in the mid-1990s to handle increasing bandwidth demands.
+- T-carrier technologies were originally invented by AT&T to transmit multiple phone calls over a single link.
+- Broadband technology unlocked the true potential of the internet for business and home users.
+- T-carrier technologies require dedicated lines and are more commonly used by businesses due to their cost.
+
+#### T-Carrier Technologies
+
+- The first **T-carrier** specification, T1, allowed for up to **24** simultaneous phone calls on a single twisted pair copper wire.
+- T1 lines can transmit data at a speed of 1.544 megabits per second.
+- Multiple T1 lines can be combined to act as a single link, such as an AT3 line with 28 T1s achieving a speed of 44.736 **megabits** per second.
+- T-carrier technologies are still in **use** today but have been largely replaced by other broadband technologies like **cable** or **fiber** connections.
+
+#### Digital Subscriber Lines (DSL)
+
+- The public telephone network was used to connect people to the Internet through dial-up connections.
+- Digital Subscriber Line (DSL) technology was developed to transmit more data over telephone lines without interfering with voice calls.
+- ADSL offers faster download speeds and slower upload speeds, while SDSL has equal upload and download speeds.
+- **SDSL** (**Symmetric Digital Subscriber Line**) was initially used by businesses but is now common for both businesses and home users.
+- There are other variations of DSL technology with different bandwidth options and operating distances.
+
+#### Cable Broadband
+
+- The Cable Communications Policy Act in 1984 deregulated the cable television business, leading to a boom in growth and adoption.
+- Cable providers realized that coaxial cables used for TV delivery could also transmit high-speed internet data.
+- Cable internet access is a shared bandwidth technology, where multiple users share the same connection until it reaches the ISP's core network.
+- Cable internet connections are usually managed by a cable modem, which connects to the cable modem termination system (CMTS).
+
+#### Fiber Optic Broadband
+
+- Fiber connections are used in the core of the Internet because they offer higher speeds and can transmit data over longer distances without signal degradation.
+- FTTX (fiber to the x) is a term used to describe different implementations of fiber connections.
+- FTTN (fiber to the neighborhood) uses fiber to deliver data to a physical cabinet that serves a certain population, with copper or coax used for the last distance.
+- FTTB (fiber to the building) delivers data to an individual building, with copper used for internal connections.
+- FTTH (fiber to the home) involves running fiber to each individual residence in a neighborhood or apartment building.
+- FTTH and FTTB may also be referred to as FTTP (fiber to the premises).
+- Fiber connections use an **optical network terminator** (ONT) instead of a modem to convert data between fiber and traditional copper networks.
+
+### WANs
+
+#### Wide Area Networks Technologies
+
+- WAN technologies require contracting a link with an ISP to send data between sites.
+- WANs use **different** protocols at the **data link** layer to transport data.
+
+#### Supplemental Reading for WAN Protocols
+
+- WANs can be **connected** through the Internet with connections provided by Internet Service Providers (ISPs) in each locale.
+- **Security** for WANs across the public Internet can be configured through Virtual Private Networks (VPNs).
+- Software-Defined WAN (SD-WAN) is software developed to address the **unique** needs of cloud-based WAN environments.
+- WAN optimization techniques include **compression**, **deduplication**, **protocol optimization**, l**ocal caching**, and **traffic shaping**.
+- WAN protocols such as packet **switching**, **frame** **relay**, **ATM**, **HLDC**, **SONET/SDH**, and **MPLS** are used in conjunction with **WAN** routers to distinguish between private LANs and the related public **WAN**.
+
+#### Point-to-Point VPNs
+
+- WAN technologies are great for transporting large amounts of data across multiple sites, but they can be **expensive**.
+- Cloud solutions have reduced the need for high-speed connections between sites.
+- Point-to-point VPNs, also known as site-to-site VPNs, establish a secure tunnel between two sites.
+- Point-to-point VPNs are similar to traditional VPN setups, but the tunneling logic is handled by **network devices**.
+
+### Wireless Networking
+
+#### Introduction to Wireless Networking Technologies
+
+- Wireless networking allows devices to connect to computer networks without **physical cables**.
+- Wireless communication works through **radio waves**.
+- The most common specifications for wireless networking are defined by the IEEE 802.11 standards, also known as Wi-Fi.
+- Wi-Fi networks operate on different frequency bands, such as **2.4 GHz** and **5 GHz**.
+- 802.11 protocols define how wireless networks operate at the **physical** and **data link** layers.
+
+#### Wi-Fi 6
+
+- Wi-Fi 6, also known as **802.11ax**, is a significant advancement in Wi-Fi technology.
+- It offers several benefits, including higher data rates, increased band capacity, better performance, and improved power efficiency.
+- Wi-Fi 6 improves functionality and connectivity through features like channel sharing, **Target Wake Time** (TWT), **Multi-user MIMO**, **channel utilization**, **amplitude modulation**, **OFDMA**, and **transmit beamforming**.
+- **160 MHz** channel utilization gives more space for transmitting data and increases bandwidth capability.
+- **1024 Quadrature** amplitude modulation combines two signals into a single channel, so more data is encoded.
+- Wi-Fi 6E is an additional certification for Wi-Fi 6 that adds a third 6 GHz band, providing even faster speeds and stronger performance.
+
+#### Supplemental Reading for Alphabet Soup
+
+- The reading discusses the 802.11 Wireless-Fidelity (Wi-Fi) standards and the different updates, such as a, b, g, n, ac, ad, af, ah, ax, ay, and az.
+- The 2.4 GHz frequency has a longer signal range 150 feet (45 meters) indoors, can pass through walls, but can experience congestion and interference.
+- The 5 GHz frequency has more channels, less interference, but a shorter range.
+- The wireless range is limited to 50 feet (12 meters) indoors and 100 feet (30 meters) outdoors.
+- Does not penetrate walls and other solid objects as well as 2.4 GHz.
+
+![Table-display-wifi-standards](./assets/table-display-wifi-standards.png)
+
+#### Supplemental Reading for IoT Data Transfer Protocols
+
+- IoT devices use data transfer protocols to send and receive data across networks.
+- There are two common data protocol models for IoT devices: Request/Response model and Publish/Subscribe model.
+- Examples of data protocols used in IoT include HTTP, CoAP, MQTT, AMQP, XMPP, and DDS.
+- HTTP/HTTPS is widely used for information transfer on the World Wide Web and uses a request/response model.
+- MQTT is an IoT data-centric interaction protocol that uses a publish/subscribe model and supports QoS.
+- CoAP is a web transfer protocol for IoT constrained nodes and networks.
+- AMQP is an open standard for messaging among applications in different organizations and platforms.
+- XMPP is a decentralized, open standard for chat, messaging, and collaboration tools.
+- DDS is an API standard and middleware protocol that helps devices in an IoT ecosystem share data efficiently.
+
+#### Wireless Network Configurations
+
+- There are three main types of wireless network configurations: ad-hoc networks, wireless LANs (WLANs), and mesh networks.
+- Ad-hoc networks are the simplest type, where devices communicate **directly** with each other without any supporting network **infrastructure**. They are commonly used for smartphone-to-smartphone communication, industrial settings, and disaster relief efforts.
+- **WLANs** consist of one or more access points that act as **bridges** between the wireless and wired networks. Wireless devices communicate with the access points to access resources outside of the WLAN.
+- Mesh networks are similar to ad-hoc networks, but they typically consist of wireless access points connected to a wired network. This setup allows for increased performance and range by deploying more access points without the need for individual cables.
+
+#### Wireless Channels
+
+- Channels are individual sections of the frequency band used by a wireless network.
+- They help address the issue of collision domains, where overlapping communications can cause interruptions.
+- In wired networks, switches prevent collisions by sending traffic only to the intended recipient.
+- Wireless networks don't have physical interfaces, so channels are used to reduce collisions.
+- In the 2.4 GHz band, channels 1, 6, and 11 do not overlap for 802.11 B networks.
+- Most wireless networking equipment can auto-sense congested channels and dynamically change them if needed.
+
+#### Wireless Security
+
+- Wired communication has inherent privacy because only the two nodes on either end of the **link** can read the data.
+- **Wireless networking** is less secure because radio transmissions can be intercepted by anyone within range.
+- **WEP (Wired Equivalent Privacy)** was developed to provide encryption for wireless networks, but it is a weak encryption algorithm.
+- **WEP** uses a **40-bit** encryption key, which can be easily cracked in a few minutes.
+- **WPA** (Wifi Protected Access) replaced **WEP** and uses a **128-bit** key, making it more difficult to crack.
+- **MAC** filtering is another way to secure wireless networks by only allowing connections from trusted devices.
+- **WPA2** is the most commonly used encryption algorithm for wireless networks and uses a **256-bit** key, making it even harder to crack.
+- **MAC** filtering is another way to secure wireless networks by only allowing connections from trusted devices.
+
+#### Protocols & Encryption
+
+- **WPA3** is the third iteration of the Wi-Fi Protected Access (WPA) protocol and is intended to replace **WPA2**.
+- **WPA3-Personal** is for individual users and home Wi-Fi networks, while WPA3-Enterprise is for business networks with multiple users.
+- **WPA3-Personal** includes features like natural password selection, increased ease of use, forward secrecy, and Simultaneous Authentication of Equals (SAE).
+- **WPA3-Enterprise** includes features like Galois/Counter Mode Protocol (GCMP-256), Opportunistic Wireless Encryption (OWE), Wi-Fi Device Provisioning Protocol (DPP), 384-bit Hashed Message Authentication Mode (HMAC) with Secure Hash Algorithm (SHA), and Elliptic Curve Diffie-Hellman Exchange (ECDHE) and Elliptic Curve Digital Signature Algorithm (ECDSA).
+- These new features in WPA3 improve Wi-Fi security, authentication, encryption, and protection against cyberattacks.
+
+#### Cellular Networking
+
+- Cellular networking, also known as mobile networking, is a popular form of wireless networking.
+- Cellular networks operate over radio waves and have specific frequency bands reserved for cellular transmissions.
+- These frequencies can travel over longer distances, usually spanning many **kilometers** or **miles**.
+- Cellular networks are built around the concept of cells, with each cell assigned a specific frequency band.
+
+#### Other Resources
+
+- Some of the common network protocols for IoT devices include Wi-Fi, IEEE 802.15.4, ZigBee, Thread, Z-Wave, Bluetooth, Near-Field Communication (NFC), and Long Range Wide Area Network (LoRaWan).
+- **IEEE 802.15.4** is a low-power wireless access technology used for IoT devices that operate on battery power.
+- **ZigBee** is an LR-WPAN protocol used for smart home and commercial IoT products.
+- **Thread** is a low-latency wireless mesh networking protocol compatible with a broad spectrum of IoT ecosystems.
+- **Z-Wave** is an interoperable, wireless mesh protocol used for controlling and monitoring IoT smart devices.
+- **Bluetooth** is a widely used wireless network for short-distance connections among computing and IoT devices.
+- **NFC** is a short-range, low data wireless communication protocol used for secure transactions and pairing processes.
+- **LoRaWan** is an open-source networking protocol designed for connecting battery-powered, wireless IoT devices to the internet in widely dispersed networks.
+
+## Modul 6: Troubleshooting and the Future of Networking
+
+### Verifying Network
+
+#### Ping: Internet Control Message Protocol (ICMP)
+
+- ICMP (Internet Control Message Protocol) is an error-reporting protocol that network devices such as routers use to generate error messages to the source IP address when network problems prevent delivery of IP packets.
+- An **ICMP** packet consists of a header with fields like type and code, a checksum, and a data payload.
+- The ping tool allows you to send ICMP echo requests to check if a destination is reachable.
+- The output of the ping command includes the address sending the reply, round-trip time, TTL, and packet size.
+
+#### Traceroute: Tracing the Path
+
+- Traceroute is a utility that helps determine the path between two nodes and provides information about each hop along the way.
+- It works by manipulating the TTL (Time to Live) field at the IP level, decrementing it for each hop.
+- Traceroute sends multiple packets, with the TTL field set to different values, to ensure that each hop discards the packet and sends an ICMP time-exceeded message back.
+- The output of a Traceroute command includes the hop number, round trip time, IP address, and hostname (if available) for each hop.
+- Traceroute has more options than can be specified using command line flags.
+
+#### Testing Port Connectivity
+
+- Netcat can be run through the command "nc" and requires a host and port as arguments. It can establish a connection and allow you to send application layer data to the listening service.
+- The "-z" flag in Netcat can be used to check the status of a port, and the "-v" flag provides more detailed output.
+
+### Digging into DNS
+
+#### Name Resolution Tools
+
+- The most common command line tool for name resolution is nslookup, available on Linux, Mac, and Windows.
+
+#### Public DNS Servers
+
+- ISPs (Internet Service Providers) usually **provide** a **recursive** name server, which is all you need for your computer to communicate with other devices on the Internet.
+- Another option is to use a DNS as a service **provider**.
+- Level 3 and Google are examples of organizations that provide public DNS servers.
+
+#### DNS Registration and Expiration
+
+- DNS (Domain Name System) is a global system managed in a tiered hierarchy with ICANN at the top level.
+- Registering a domain name involves creating an account with a registrar, searching for an available domain name, and agreeing upon a price and registration length.
+- Domain names can be transferred from one party to another or from one registrar to another.
+- Domain name registrations have a fixed duration, and it's important to keep track of expiration dates to prevent others from registering them.
+
+#### Hosts Files
+
+- Hosts files were used to correlate numbered network addresses with words.
+- Hosts files were used to correlate numbered network addresses with words.
+- A host file is a flat file that contains network addresses followed by the corresponding host names.
+- Hosts files are evaluated by the networking stack of the operating system and can be used to refer to network addresses anywhere.
+- Modern operating systems still have hosts files, including those on phones and tablets.
+
+### The Cloud
+
+#### What is The Cloud?
+
+- The Cloud is a concept in computing where computing resources are provisioned in a sharable way.
+- Cloud computing relies on hardware virtualization, which allows multiple virtual instances to run on a single physical machine.
+- The Cloud allows for sharing resources among multiple instances, reducing the need for purchasing and maintaining physical servers.
+- **Hybrid Clouds** combine private and public Clouds, with sensitive technologies hosted on the private Cloud and less sensitive servers on the public Cloud.
+
+#### Everything as a Service
+
+- X as a service (XaaS) is a term used in cloud computing.
+- **Infrastructure as a Service** (IaaS) provides virtualized computing resources over the internet. you pay someone else to provide network and server infrastructure.
+- **Platform as a service (PaaS)** provides a platform for customers to run their services without needing an entire server.
+- **Software as a service (SaaS)** is a way of licensing software to others while keeping it hosted and managed.
+- **SaaS** has become popular for things like email and web-based applications.
+
+#### Cloud Storage
+
+- Cloud storage is a popular way to store data **securely** and **access** it easily.
+- Cloud storage **eliminates** the need for managing a storage array and monitoring hardware components.
+- Cloud storage solutions grow with your needs, and you only pay for the storage you use.
+- Cloud storage is not only useful for replacing large-scale local storage arrays but also for backing up smaller bits of data, like photos on a smartphone.
+
+#### Quiz The Cloud
+
+1. A piece of software that runs and manages virtual machines is known as a **Hypervisor**
+2. What is Office 365 Outlook an example of? **SaaS**
+3. A hybrid cloud is ? **a combination of a public cloud and a private cloud**
+4. Which of the following are  cloud services? Select all that apply.
+   - **IaaS**
+   - **PaaS**
+   - **SaaS**
+5. Which cloud service provides access to things like virtual machines, containers, networks, and storage? **IaaS**
+
+### IPv6
+
+#### IPv6 Addressing and Subnetting
+
+- IPv4 addresses are 32 bits, allowing for around 4.2 billion individual addresses.
+- IPv6 addresses are **128 bits**, allowing for a much larger number of addresses.
+- IPv6 addresses are written in groups of **16 bits**, with each group made up of four hexadecimal numbers.
+- Leading zeros in a group can be removed, and consecutive groups of zeros can be replaced with two colons.
+- The IPv6 address space has **reserved** ranges for documentation, multicast, and link-local unicast.
+- IPv6 subnetting uses cider notation to define a subnet mask against the network ID portion of an IPv6 address.
+
+#### IPv6 Headers
+
+- The IPv6 header includes fields such as **version**, traffic **class**, **flow label**, **payload length**, **next header**, **hop limit**, and **source/destination** address.
+- The **version** field indicates the IP version in use.
+- The **traffic class** field defines the type of **traffic** and allows for **different** priorities.
+- The **flow label field** is used by routers to determine the **quality** of service for a specific **datagram**.
+- The **payload length** field specifies the length of the data payload section.
+- The **next header** field identifies the type of header immediately following the current one.
+- The **hop limi**t field is similar to the TTL field in IPv4 and limits the number of hops a packet can take.
+- The **source** and **destination** address fields are each 128 bits long.
+- **Optional headers** can be included after the main IPv6 header, forming a chain of headers if needed.
+
+#### IPv6 and IPv4 Harmony
+
+- IPv6 adoption is not possible for the entire Internet and all connected networks to switch to IPv6 all at once.
+- IPv6 and IPv4 traffic need to **co-exist** to allow individual organizations to transition to IPv6.
+- **IPv4-mapped** address space allows IPv4 traffic to travel over an IPv6 network.
+- **IPv6 traffic** needs a way to travel over IPv4 networks, which is achieved through IPv6 tunnels.
+- **IPv6 tunnel** brokers provide IPv6 tunneling endpoints without additional equipment.
+- There are competing protocols for IPv6 tunnels, but the future is the adoption of IPv6 as the main protocol at the network layer.
+
+#### IPv6 and IPv4 harmony
+
+- IPv4 and IPv6 have different structures for their datagrams, so they speak different languages.
+- IPv6 tunneling protocols are used to allow IPv6 traffic to travel over the remaining IPv4 network.
+- There are three commonly used tunnel protocols: 6in4/manual protocol, Tunnel Setup Protocol (TSP), and Anything in Anything (AYIYA) protocol.
+![Tunneling-IPv6-over-IPv4](./assets/Tunneling_diagram.png)
+
+#### Quiz IPv6
+
+1. An IPv6 address is how many bits long? **128**
+2. What is the very first field in an IPv6 header? **Version**
+3. Which IPv6 header field indicates how many routers can forward a packet before it's discarded? **Hop Limit**
+4. The IPv4 mapped address space within IPv6 always starts with _______ zeroes. **80**
+5. For IPv6 traffic to travel on an IPv4 network, which two technologies are used? Select all that apply. **IPv6 tunnels, Datagrams**
+
+### Graded Assessment
+
+#### Quiz IPv6 Compression
+
+| No | Original                                | Comppress                               |
+|----|-----------------------------------------|-----------------------------------------|
+| 1  | ad93:a0e4:a9ce:32fc:cba8:15fe:ed90:d768 | ad93:a0e4:a9ce:32fc:cba8:15fe:ed90:d768 |
+| 2  | 9930:cafa:0000:0052:04cc:7b7a:0037:27e6 | 9930:cafa:0:52:4cc:7b7a:37:27e6         |
+| 3  | 5d66:5ec9:0046:0000:2576:004f:7159:0639 | 5d66:5ec9:46:0:2576:4f:7159:639         |
+| 4  | 8bfa:99f0:d4c5:0b8c:0f6f:04df:2804:283d | 8bfa:99f0:d4c5:b8c:f6f:4df:2804:283d    |
+| 5  | 00eb:0000:0000:0000:d8c1:0946:0272:0879 | eb::d8c1:946:272:879                    |
+| 6  | 0e56:11c2:0e75:8d23:3528:7e0d:419b:bdce | e56:11c2:e75:8d23:3528:7e0d:419b:bdce   |
+| 7  | 00c8:b434:06ee:ec2f:03c9:01ce:765d:a66b | c8:b434:6ee:ec2f:3c9:1ce:765d:a66b      |
+| 8  | 558c:0000:0000:d367:7c8e:1216:0000:66be | 558c::d367:7c8e:1216:0:66be             |
+| 9  | 7d2b:00a9:a0c4:0000:a772:00fd:a523:0358 | 7d2b:a9:a0c4:0:a772:fd:a523:358         |
+| 10 | 2b06:0000:0000:1f2b:d77f:0000:0000:89ce | 2b06::1f2b:d77f:0:0:89ce                |
+
+#### Troubleshooting and the Future of Networking
+
+1. The ability for a protocol or program to determine that something went wrong is known as ? **Error detection**
+2. The first field of an Internet Control Message Protocol (ICMP) packet specifies the message type. Which choices represent message type examples? Select all that apply. **Echo request, Destination unreachable, Time exceeded**
+3. Which two tools function similar to traceroute? (Choose all that apply) **tracert, mtr, pathping**
+4. You run the Test-NetConnection command on a Windows PC while only providing a host name. As a result, what default action does the command use? **IMCP eEcho request**
+5. What is one of the most commonly used name resolution tools? **nslookup**
+6. When troubleshooting Domain Name System (DNS) problems, which helpful feature do public servers usually support? **ICMP echo requests**
+7. With virtualization, a single physical machine, called a host, can run many individual virtual instances, called ______.   **Guests**
+8. What is The IPv6 loopback address? **::1**
+9. When shortening an Internet Protocol (IP) v6 address, which two rules are used? Select two that apply. **Removing all leading ones, Replace groups of ones with semicolons.**
+10. Which Internet Protocol (IP) v6 field is identical in purpose to the TTL field in an IPv4 header? **Hop limit**
+
+## Glossary
+
+- [Glossary](./assets/glossary.docx)
