@@ -1,0 +1,105 @@
+@media screen and (max-width:710px) {
+
+    .content,
+    .slider,
+    aside {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .box .text h2,
+    main h1 {
+        font-size: 40px
+    }
+
+    .title h3 {
+        font-size: 14px;
+        word-spacing: 5px;
+        letter-spacing: 1px
+    }
+
+    .title h1 {
+        font-size: 24px;
+        letter-spacing: 12px
+    }
+
+    main h1 {
+        text-shadow: 2px 2px #ee4266
+    }
+
+    nav,
+    nav ul li {
+        text-align: left
+    }
+
+    .sidebar {
+        display: block
+    }
+
+    .navigate .menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: -500px;
+        transition: .2s linear
+    }
+
+    nav ul {
+        flex-direction: column
+    }
+
+    #check-two:checked~.menu .submenu {
+        background-color: #aad8d3;
+        color: #000
+    }
+
+    #check-two:checked~.menu .submenu .subsmenu {
+        display: block;
+        color: #000
+    }
+
+    #check-two:checked~.menu .submenu .subsmenu .drop-down,
+    .content,
+    .slider,
+    aside {
+        width: 100%
+    }
+
+    #check-one:checked~.sidebar #open,
+    #check-two:checked~.menu .submenu .fa-angle-down {
+        display: none
+    }
+
+    #check-two:checked~.menu .submenu .fa-angle-up {
+        display: inline
+    }
+
+    #check-one:checked~.menu {
+        left: 0
+    }
+
+    #check-one:checked~.sidebar #close {
+        display: block;
+        float: left;
+        width: 16px
+    }
+
+    .content article {
+        line-height: 35px
+    }
+
+    @media (hover:none) {
+        nav ul li:active {
+            background-color: #aad8d3;
+            color: #000;
+            cursor: pointer
+        }
+
+        footer ul li:active,
+        nav ul .submenu:active>.subsmenu .drop-down li:active {
+            background-color: #ee4266
+        }
+    }
+}

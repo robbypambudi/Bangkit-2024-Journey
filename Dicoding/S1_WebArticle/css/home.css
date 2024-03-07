@@ -1,0 +1,46 @@
+.box .text h2,
+.box .text h3 {
+    text-shadow: 2px 2px 2px #101111
+}
+
+.content .bgAboutUs {
+    margin-bottom: 100px
+}
+
+.box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    color: #fff
+}
+
+.box .text {
+    text-align: left;
+    background-color: #504c4c8a;
+    padding: 20px
+}
+
+.box .text:hover {
+    background-color: #3f3c3cc2;
+    box-shadow: 0 0 8px 4px #ee4266
+}
+
+.box .text h2 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+
+.box .text h3 {
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.box .text a {
+    float: right;
+    color: #ee4266
+}
+
+.box .text a:hover {
+    text-shadow: 1px 1px 1px #fcffff
+}

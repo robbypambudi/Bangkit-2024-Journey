@@ -1,0 +1,391 @@
+.sidebar,
+aside,
+nav ul li {
+    text-align: center
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.card,
+.homeCard {
+    border-radius: 5px
+}
+
+body,
+p {
+    font-family: "Madimi One", sans-serif
+}
+
+body,
+nav ul li {
+    font-size: 18px
+}
+
+body {
+    line-height: 1;
+    padding: 0;
+    background-color: #f5e6c8;
+    color: #000
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2)
+}
+
+.card:hover {
+    box-shadow: 0 0 8px 1px #ee4266
+}
+
+header {
+    width: 100%;
+    display: inline;
+    color: #eee
+}
+
+header .title {
+    text-align: left;
+    background-image: url(assets/endless-clouds.png);
+    background-color: #35374b;
+    border-bottom: 3px solid rgba(15, 7, 27, .7);
+    padding: 30px 20px
+}
+
+.title h1 {
+    font-size: 55px
+}
+
+.title h3 {
+    margin-top: 10px;
+    word-spacing: 7px;
+    letter-spacing: 4px
+}
+
+nav {
+    width: 100%;
+    height: min-content;
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+nav ul {
+    background-color: #ee4266;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+nav ul li {
+    padding: 20px
+}
+
+@media (hover:hover) {
+
+    nav ul a:hover,
+    nav ul li:hover {
+        background-color: #aad8d3;
+        color: #000;
+        cursor: pointer
+    }
+
+    nav ul .submenu:hover>.subsmenu {
+        display: block
+    }
+
+    nav ul .submenu:hover>.subsmenu .drop-down li:hover {
+        background-color: #5400b5
+    }
+}
+
+#check-one,
+#check-two,
+.sidebar #close,
+.submenu .fa-angle-up,
+.submenu .subsmenu {
+    display: none
+}
+
+.drop-down {
+    display: block;
+    position: absolute;
+    top: 100%;
+    margin-left: -20px;
+    background-color: #d8d7aa;
+    border-radius: 0;
+    cursor: pointer
+}
+
+.sidebar,
+footer #cpr,
+footer .followUs a:hover {
+    background-color: #ee4266
+}
+
+.drop-down li {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px
+}
+
+.content article,
+aside {
+    line-height: 40px;
+    padding: 15px
+}
+
+.sidebar {
+    padding: 10px;
+    display: none
+}
+
+.sidebar #open {
+    display: block;
+    float: left;
+    width: 16px
+}
+
+main {
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 0 25px
+}
+
+main h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px #ee4266
+}
+
+h2 {
+    font-size: 22px;
+    color: #ee4266
+}
+
+.content {
+    width: 70%;
+    float: left;
+    padding: 0
+}
+
+.content,
+aside {
+    margin: 15px 0
+}
+
+.content article {
+    text-align: justify;
+    margin-bottom: 15px
+}
+
+aside {
+    width: 25%;
+    float: right
+}
+
+aside .profilePhoto {
+    width: 80%;
+    margin: 10px auto;
+    display: block
+}
+
+aside .profilePhoto img {
+    max-width: 120px;
+    width: 100%
+}
+
+.biodata {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 auto
+}
+
+.btn-goUp,
+footer,
+footer #cpr {
+    text-align: center
+}
+
+.biodata td {
+    padding: 2px
+}
+
+.btn-goUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 15px 0;
+    background-color: #00acb5a2;
+    border-radius: 50%
+}
+
+.btn-goUp:hover {
+    background-color: #00acb5;
+    box-shadow: 0 0 8px 1px #07dfeb
+}
+
+footer {
+    background-color: #393e46;
+    background-image: url(assets/endless-clouds-rotated.png);
+    color: #eee;
+    padding-bottom: 20px;
+    line-height: 25px;
+    font-size: 14px
+}
+
+footer #cpr {
+    padding: 5px;
+    border-bottom: 3px solid #0f071b
+}
+
+footer .followUs {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+footer .followUs a {
+    display: block;
+    width: 83px;
+    padding: 3px;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid;
+    border-radius: 5px
+}
+
+.cf:after,
+.cf:before {
+    content: " ";
+    display: table
+}
+
+.cf:after {
+    clear: both
+}
