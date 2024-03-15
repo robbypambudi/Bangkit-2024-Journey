@@ -1,3 +1,31 @@
+- [Google Cloud Computing Foundations](#google-cloud-computing-foundations)
+  - [So what's the cloud anyway?](#so-whats-the-cloud-anyway)
+    - [Star with a platform](#star-with-a-platform)
+    - [Resources and Projects](#resources-and-projects)
+    - [Folder](#folder)
+    - [Cloud SDK](#cloud-sdk)
+    - [Cloud Shell](#cloud-shell)
+    - [Google Cloud Computing Foundations: Getting Started](#google-cloud-computing-foundations-getting-started)
+    - [Google Cloud CLI](#google-cloud-cli)
+      - [Set Region](#set-region)
+      - [Finding project information](#finding-project-information)
+      - [Setting environment variables](#setting-environment-variables)
+      - [Creating a virtual machine with the gcloud tool](#creating-a-virtual-machine-with-the-gcloud-tool)
+      - [Filtering command-line output](#filtering-command-line-output)
+    - [Quiz](#quiz)
+  - [Google Cloud Computing Foundations: Cloud Computing Fundamentals](#google-cloud-computing-foundations-cloud-computing-fundamentals)
+    - [Compute Options in the Cloud](#compute-options-in-the-cloud)
+    - [Infrastructure as a Service (IaaS)](#infrastructure-as-a-service-iaas)
+    - [Create a Virtual Machine](#create-a-virtual-machine)
+    - [Configuring Elastic Apps with Autoscaling](#configuring-elastic-apps-with-autoscaling)
+    - [Exploring PaaS with App Engine](#exploring-paas-with-app-engine)
+    - [Cloud Functions](#cloud-functions)
+    - [Google Kubernates Engine](#google-kubernates-engine)
+      - [Lab - Getting Started with Google Kubernetes Engine](#lab---getting-started-with-google-kubernetes-engine)
+      - [Deploying a containerized application to GKE](#deploying-a-containerized-application-to-gke)
+      - [Deleting the cluster](#deleting-the-cluster)
+    - [Maneged Serverless Computing with Cloud Run](#maneged-serverless-computing-with-cloud-run)
+
 # Google Cloud Computing Foundations
 
 ## So what's the cloud anyway?
@@ -100,3 +128,57 @@
 - Autoscaling, where VMs can be added to or subtracted from an application based on load metrics.
 - Google’s Virtual Private Cloud (VPC) supports several different kinds of load balancing, which we’ll explore shortly.
 - Specs for currently available VM machine types are at cloud.google.com/compute/docs/machine-types
+
+### Exploring PaaS with App Engine
+
+- App Engine is a fully managed, serverless platform for developing and hosting web applications at scale.
+- Two types of App Engine Environment: **Standard** and **Flexible**.
+- Standar
+  - Peristent storage with queries, sorting, and transactions.
+  - Automatic scaling and load balancing.
+  - Java, Python, PHP, Go, Node.js, and Ruby.
+- Flexible
+  - Microservices architecture.
+  - Authorization
+  - SQL and NoSQL databases.
+
+`gcloud app deploy` - Deploy the app to App Engine.
+`gcloud app browse` - Open the app in a web browser.
+`dev_appserver.py app.yaml` - Run the app locally. gcloud app
+
+### Cloud Functions
+
+- Serverless logic that can be triggered by HTTP requests, Cloud Storage, Cloud Pub/Sub, and Firebase.
+
+- `gsutil mb -p [PROJECT_ID] gs://[BUCKET_NAME]` - Create a Cloud Storage bucket.
+- `gcloud functions deploy helloWorld \
+  --stage-bucket qwiklabs-gcp-01-06f1e691a25c \
+  --trigger-topic hello_world \
+  --runtime nodejs20
+  ` - Deploy a Cloud Function.
+
+### Google Kubernates Engine
+
+- Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers.
+
+#### Lab - Getting Started with Google Kubernetes Engine
+
+- `gcloud container clusters create --machine-type=e2-medium --zone=us-east4-c lab-cluster`
+  - Create a Kubernetes cluster.
+  - `gcloud container clusters get-credentials lab-cluster --zone us-east4-c` - Get authentication credentials for the cluster.
+- `gcloud container clusters get-credentials lab-cluster` - Get authentication credentials for the cluster.
+
+#### Deploying a containerized application to GKE
+
+- `kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0`
+  - Create a deployment.
+- `kubectl expose deployment hello-server --type=LoadBalancer --port 8080` - Expose the deployment.
+
+#### Deleting the cluster
+
+- `gcloud container clusters delete lab-cluster` - Delete the cluster.
+
+### Maneged Serverless Computing with Cloud Run
+
+- Cloud Run is a fully managed compute platform that automatically scales stateless containers.
+- Built on Knative, an open-source project that extends Kubernetes to provide a set of middleware components (build, serving, eventing) for modern, source-centric, and container-based applications.
